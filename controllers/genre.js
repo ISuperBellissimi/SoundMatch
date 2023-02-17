@@ -16,7 +16,7 @@ const saveUserGenres = (req, res, next) => {
     let genres = req.body.genres;
     let user_id = req.loggedUser.id;
     GenrePreferences.findOneAndUpdate({_id: user_id}, {_id: user_id, genres: genres}, {new: true, upsert: true}, function(err, item){
-        if (err) return res.json({success: false, message: "Errore, non simao riusciti a impostare le tue preferenze"});
+        if (err) return res.json({success: false, message: "Errore, non siamo riusciti a impostare le tue preferenze"});
         return res.json({success: true, genres: item.genres});
     });
 }
