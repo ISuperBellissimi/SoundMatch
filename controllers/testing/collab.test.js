@@ -93,7 +93,7 @@ describe("Test API collab", () => {
         .set('x-access-token', token)
         .end(function(err,res) {
             expect(res.success).to.be.true
-            expect(res.body).toEqual({message: 'Collaborazione rifiatuta'})
+            expect(res.body).toEqual({message: 'Collaborazione rifiutata'})
             if(err) {
                 throw err
             }
