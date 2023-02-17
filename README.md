@@ -7,4 +7,4 @@ Scaricare la repository e digitare il comando `npm install` per installare i mod
 
 In alternativa un sito sempre online si trova al link `http://38.54.13.226:3000/signup.html`.
 
-Per eseguire i casi di testing utilizzare `npm testing <nome_file>`, oppure `npm run testing <nome_file>`
+Per eseguire i casi di testing utilizzare `npm run testing <nome_file>`
